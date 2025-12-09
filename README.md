@@ -178,9 +178,9 @@ python app.py
 
 欢迎提交Issue和Pull Request来改进这个项目。
 
-## 许可证
+## 
+![赞赏](data/wechat.jpg)
 
-MIT License
 
 ## 联系方式
 
