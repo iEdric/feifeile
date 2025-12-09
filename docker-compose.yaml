@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  flight-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile  # 显式指定Dockerfile路径
+    ports:
+      - "7171:7171"          # 端口映射
+    volumes:
+      - ./data:/app/data     # 数据持久化
+    environment:
+      - TZ=Asia/Shanghai    # 时区设置
+      - PYTHONUNBUFFERED=1   # 禁用Python缓冲
+      - GRADIO_SERVER_NAME=0.0.0.0  # 确保Gradio监听所有接口
+      - TMPDIR=/tmp         # 临时目录设置
+      - TEMP=/tmp           # 临时目录设置
+      - TMP=/tmp            # 临时目录设置
+    restart: always # 自动重启策略
+
