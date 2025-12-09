@@ -37,7 +37,7 @@ try:
     # 如果环境变量未设置，使用SiliconFlow作为默认配置
     if not api_key:
         print("🔧 使用SiliconFlow API作为默认配置...")
-        api_key = "sk-lwojpoaubknwkxucogmdupbyafpjestimbfklfkypjzcxdyn"
+        api_key = "sk-"
         base_url = "https://api.siliconflow.cn/v1"
     
     planner = FlightPlanner(flights, api_key, base_url)
