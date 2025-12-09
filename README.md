@@ -53,7 +53,7 @@ python app.py
 #### 启用AI智能规划功能
 ```bash
 # 使用SiliconFlow API（推荐，更便宜）
-export OPENAI_API_KEY="sk-lwojpoaubknwkxucogmdupbyafpjeklfkypjzcxdyn"
+export OPENAI_API_KEY="sk-lwpjzcxdyn"
 export OPENAI_API_BASE="https://api.siliconflow.cn/v1"
 python app.py
 
